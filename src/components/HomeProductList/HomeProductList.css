@@ -1,0 +1,9 @@
+ 
+
+ @media screen and (width<560px){
+    .brands{
+        height: 30px;
+        width:40px;
+        object-fit: contain;
+    }
+ }

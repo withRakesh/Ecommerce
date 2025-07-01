@@ -1,0 +1,52 @@
+import React from 'react'
+import {Container, Card, Row, Col,  } from 'react-bootstrap'
+import { productData } from '../HomeproductsData/HomeProducts'
+import './HomeProductList.css'
+import { brandLogos } from '../HomeproductsData/HomeProducts'
+import { toast} from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
+
+
+const HomeProductList = ({onAddToCart}) => {
+ 
+    const notify = ()=>{
+        toast.success('Added Successfully')
+    }
+ 
+  return (
+    <div>
+    <Container className='py-5'>
+        <h4 className='fw-bold py-md-5 text-center mb-3'>Products</h4>
+        <Row className='g-4'>
+            {productData.map((item, index)=>(
+                <Col key={index} xs={12} sm={6} lg={3} md={6}  >
+                <Card className='h-100 shadow-sm border-0'>
+                    <Card.Img variant='top' className='img-fluid custom-img' src={item.img} alt={item.name}></Card.Img>
+                    <Card.Body>
+                        <Card.Title>{item.name}</Card.Title>
+                        <Card.Text>{item.description}</Card.Text>
+                    </Card.Body>
+                    <Card.Footer className='border-0 bg-white d-flex justify-content-between align-items-center'>
+                        <Card.Text className='fw-bold'>₹ {item.price}</Card.Text>
+                        <button className='border-0 p-1'  onClick={() => {onAddToCart(item);notify()}}>Add to cart</button>
+                    </Card.Footer>
+                </Card>
+                </Col>
+            ))}
+        </Row>
+    </Container>
+    <Container className='bg-light mb-5'>
+        <h4 className='fw-bold py-md-5 text-center mb-3'>Our Brands</h4>
+            <Row className='py-4'>
+                {brandLogos.map((brand, i)=>(
+                    <Col key={i} xs={2} className='text-center'>
+                        <img src={brand.img} alt="" className='brands' style={{height:'80px' , width:'80'}} />
+                    </Col>
+                ))}
+            </Row>
+    </Container>
+    </div>
+  )
+}
+
+export default HomeProductList
