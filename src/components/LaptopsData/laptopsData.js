@@ -1,11 +1,11 @@
  
-import lap2 from '../Assets/laptops/lap2.jpg'
-import lap5 from '../Assets/laptops/lap5.jpg'
-import lap6 from '../Assets/laptops/lap6.jpg'
-import lap7 from '../Assets/laptops/lap7.jpg'
-import lap8 from '../Assets/laptops/lap8.jpg'
-import lap9 from '../Assets/laptops/lap9.jpg'
-import lap10 from '../Assets/laptops/lap10.jpg'
+import lap2 from '../Assets/laptops/lap2.webp'
+import lap5 from '../Assets/laptops/lap5.webp'
+import lap6 from '../Assets/laptops/lap6.webp'
+import lap7 from '../Assets/laptops/lap7.webp'
+import lap8 from '../Assets/laptops/lap8.webp'
+import lap9 from '../Assets/laptops/lap9.webp'
+import lap10 from '../Assets/laptops/lap10.webp'
 
  export const laptopsData = [
   {

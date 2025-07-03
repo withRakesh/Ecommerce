@@ -1,9 +1,9 @@
-import head1 from '../Assets/headphones/head2.jpg'
-import head2 from '../Assets/headphones/head3.jpg'
-import head3 from '../Assets/headphones/head5.jpg'
-import head4 from '../Assets/headphones/head6.jpg'
-import head5 from '../Assets/headphones/head7.jpg'
-import head6 from '../Assets/headphones/head8.jpg'
+import head1 from '../Assets/headphones/head2.webp'
+import head2 from '../Assets/headphones/head3.webp'
+import head3 from '../Assets/headphones/head5.webp'
+import head4 from '../Assets/headphones/head6.webp'
+import head5 from '../Assets/headphones/head7.webp'
+import head6 from '../Assets/headphones/head8.webp'
 
 export const headphonesData = [
   {

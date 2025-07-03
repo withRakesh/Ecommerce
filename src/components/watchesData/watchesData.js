@@ -1,11 +1,11 @@
-import watch1 from '../Assets/watches/watch2.jpg'
-import watch2 from '../Assets/watches/watch3.jpg'
-import watch3 from '../Assets/watches/watch4.jpg'
-import watch4 from '../Assets/watches/watch5.jpg'
-import watch5 from '../Assets/watches/watch6.jpg'
-import watch6 from '../Assets/watches/watch7.jpg'
-import watch7 from '../Assets/watches/watch8.jpg'
-import watch8 from '../Assets/watches/watch9.jpg'
+import watch1 from '../Assets/watches/watch2.webp'
+import watch2 from '../Assets/watches/watch3.webp'
+import watch3 from '../Assets/watches/watch4.webp'
+import watch4 from '../Assets/watches/watch5.webp'
+import watch5 from '../Assets/watches/watch6.webp'
+import watch6 from '../Assets/watches/watch7.webp'
+import watch7 from '../Assets/watches/watch8.webp'
+import watch8 from '../Assets/watches/watch9.webp'
  
 
 

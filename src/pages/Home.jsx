@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Col, Row } from "react-bootstrap";
-import home from "../components/Assets/home.jpg";
+ import home from '../components/Assets/home.webp'
 import HomeProductList from "../components/HomeProductList/HomeProductList";
  
 const Home = ({onAddToCart}) => {
