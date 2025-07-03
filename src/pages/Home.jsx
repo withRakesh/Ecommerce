@@ -16,7 +16,7 @@ const Home = ({onAddToCart}) => {
             <button className="bg-white  border-1 p-1 pe-2">Shop Now</button>
           </Col>
           <Col md={6}>
-            <img className="img-fluid" src={home} alt="home" />
+            <img className="img-fluid" src={home} loading="lazy" alt="home" />
           </Col>
         </Row>
       </Container>

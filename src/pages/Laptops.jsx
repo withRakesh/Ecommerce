@@ -28,6 +28,7 @@ const Laptops = ({ onAddToCart }) => {
                   className="img-fluid custom-img"
                   src={item.img}
                   alt={item.name}
+                  loading="lazy"
                 ></Card.Img>
                 <Card.Body>
                   <Card.Title>{item.name}</Card.Title>

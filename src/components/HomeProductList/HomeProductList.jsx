@@ -21,7 +21,7 @@ const HomeProductList = ({onAddToCart}) => {
             {productData.map((item, index)=>(
                 <Col key={index} xs={12} sm={6} lg={3} md={6}  >
                 <Card className='h-100 shadow-sm border-0'>
-                    <Card.Img variant='top' className='img-fluid custom-img' src={item.img} alt={item.name}></Card.Img>
+                    <Card.Img variant='top' className='img-fluid custom-img' loading='lazy' src={item.img} alt={item.name}></Card.Img>
                     <Card.Body>
                         <Card.Title>{item.name}</Card.Title>
                         <Card.Text>{item.description}</Card.Text>
@@ -40,7 +40,7 @@ const HomeProductList = ({onAddToCart}) => {
             <Row className='py-4'>
                 {brandLogos.map((brand, i)=>(
                     <Col key={i} xs={2} className='text-center'>
-                        <img src={brand.img} alt="" className='brands' style={{height:'80px' , width:'80'}} />
+                    <img src={brand.img} alt="" loading='lazy' className='brands' style={{height:'80px' , width:'80'}} />
                     </Col>
                 ))}
             </Row>
