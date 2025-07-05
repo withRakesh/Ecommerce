@@ -5,18 +5,18 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Headphones = ({ onAddToCart }) => {
-  const notify = () => {
-    toast.success("Added Successfully");
-  };
-
   return (
     <div>
       <Container className="py-5 bg-light">
-        <h4
-          className="fw-bold py-md-5 text-center mb-3"
-          style={{ fontFamily: "eagle lake" }}
+             <h4
+          className="title py-md-5  text-center mb-3"
+          style={{
+            fontFamily: "marcellus",
+            letterSpacing:'2px',
+            fontSize:'40px',
+          }}
         >
-          Offer Sale
+     Latest in Audio Gear
         </h4>
         <Row className="g-4">
           {headphonesData.map((item, index) => (
@@ -39,7 +39,6 @@ const Headphones = ({ onAddToCart }) => {
                     className="border-0 p-1"
                     onClick={() => {
                       onAddToCart(item);
-                      notify();
                     }}
                   >
                     Add to cart

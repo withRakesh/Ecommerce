@@ -4,20 +4,19 @@ import { watchData } from "../components/watchesData/watchesData";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const Watches = ({onAddToCart}) => {
-    
-  const notify = () => {
-    toast.success("Added Successfully");
-  };
-
+const Watches = ({ onAddToCart }) => {
   return (
     <div>
       <Container className="py-5">
-        <h4
-          className="fw-bold py-md-5 text-center mb-3"
-          style={{ fontFamily: "eagle lake" }}
+              <h4
+          className="title py-md-5  text-center mb-3"
+          style={{
+            fontFamily: "marcellus",
+            letterSpacing:'2px',
+            fontSize:'40px',
+          }}
         >
-          Offer Sale
+       Best Sellers
         </h4>
         <Row className="g-4">
           {watchData.map((item, index) => (
@@ -40,7 +39,6 @@ const Watches = ({onAddToCart}) => {
                     className="border-0 p-1"
                     onClick={() => {
                       onAddToCart(item);
-                      notify();
                     }}
                   >
                     Add to cart

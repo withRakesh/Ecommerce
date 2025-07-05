@@ -1,23 +1,21 @@
 import React from "react";
 import { laptopsData } from "../components/LaptopsData/laptopsData";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import {toast} from "react-toastify"
+import { toast } from "react-toastify";
 
 const Laptops = ({ onAddToCart }) => {
-
-    const notify = ()=>{
-        toast.success('Added Successfully')
-    }
- 
-
   return (
     <div>
       <Container className="py-5">
-        <h4
-          className="fw-bold py-md-5 text-center mb-3"
-          style={{ fontFamily: "eagle lake" }}
+          <h4
+          className="title py-md-5  text-center mb-3"
+          style={{
+            fontFamily: "marcellus",
+            letterSpacing:'2px',
+            fontSize:'40px',
+          }}
         >
-          Offer Sale
+           Latest Arrivals
         </h4>
         <Row className="g-4">
           {laptopsData.map((item, index) => (
@@ -40,7 +38,6 @@ const Laptops = ({ onAddToCart }) => {
                     className="border-0 p-1"
                     onClick={() => {
                       onAddToCart(item);
-                      notify();
                     }}
                   >
                     Add to cart

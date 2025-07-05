@@ -15,42 +15,49 @@ import sony from '../Assets/brandLogos/sony.webp'
 
 export const productData = [
   {
+    id:1,
     name: "Beats Headphones",
     description: "High-quality wireless headphones with noise cancellation.",
     img: head1,
     price: 1800.99,
   },
   {
+      id:2,
     name: "AirPods Pro",
     description: "Apple AirPods Pro with spatial audio and adaptive transparency.",
     img:  head4,
     price: 2800.99,
   },
   {
+      id:3,
     name: "MacBook Pro",
     description: "Apple MacBook Pro with M2 chip and Retina Display.",
     img:  lap1,
     price: 12299.99,
   },
   {
+      id:4,
     name: "Dell XPS 13",
     description: "Sleek and powerful Dell laptop for productivity on the go.",
     img: lap4,
     price: 30999.99,
   },
   {
+      id:5,
     name: "Business Watch",
     description: "Elegant wristwatch with stainless steel strap and chronograph.",
     img:  watch1,
     price: 2349.99,
   },
   {
+      id:6,
     name: "Timex Classic",
     description: "Timex analog watch with minimalist design and durable build.",
     img:  watch10,
     price: 3900.99,
   },
   {
+      id:7,
     name:'Wired Studio Headphones',
     description:'Comfortable wired headphones with clear sound, great for everyday use.',
     img: head9,
@@ -58,6 +65,7 @@ export const productData = [
 
   },
     {
+        id:8,
     name:'Wireless Headphones',
     description:'Bluetooth headphones with noise cancellation and long battery life., great for everyday use.',
     img: head10,

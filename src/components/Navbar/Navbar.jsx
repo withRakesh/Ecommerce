@@ -6,15 +6,18 @@ const MyNavbar = ({ cartItems }) => {
   return (
     <Navbar expand="md" bg="light" variant="light" className="shadow-sm">
       <Container>
-        <Navbar.Brand href="#">
+        <Navbar.Brand href="#" >
           <b>ElectroKart</b>
+          
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav" className="justify-content-end ">
-          <Nav>
-            <Button variant="outline-dark" className="me-2 m-2 ">
-              Login
+          <Nav className="text-center">
+                <Link as={Link} to={'/login'}> 
+               <Button   className="me-2 m-1 bg-light text-dark border-0">
+             login
             </Button>
+            </Link>
             <div className="text-center d-flex justify-content-center align-items-center gap-3">
               <Link
                 to="/cart"
